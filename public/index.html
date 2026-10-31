@@ -33,17 +33,9 @@
 
     <section id="waitlist">
       <h2>Liste d'attente</h2>
-      <p>Laissez votre e-mail pour être prévenu du lancement et dire ce qui vous manque le plus.</p>
-      <!-- Remplacer l'action par l'URL du formulaire du service de newsletter choisi -->
-      <form action="REPLACE_WAITLIST_URL" method="post">
+      <p>Laissez votre e-mail pour être prévenu du lancement. Vous pourrez répondre au message de bienvenue pour dire ce qui vous manque le plus.</p>
+      <form action="https://buttondown.com/api/emails/embed-subscribe/OpsForgeKit" method="post">
         <label>E-mail <input type="email" name="email" required autocomplete="email"></label>
-        <label>Votre sujet prioritaire
-          <select name="topic">
-            <option value="gitlab-security">Sécurité GitLab CI</option>
-            <option value="ceph">Ceph en production</option>
-            <option value="other">Autre</option>
-          </select>
-        </label>
         <button type="submit">Me prévenir</button>
       </form>
       <p><small>Votre e-mail sert uniquement à vous informer du lancement. Voir la <a href="/privacy.html">politique de confidentialité</a>.</small></p>
