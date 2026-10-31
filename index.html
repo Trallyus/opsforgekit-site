@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpsForgeKit — Kits de sécurité et d'exploitation prêts à l'emploi</title>
+  <meta name="description" content="Kits clef en main pour sécuriser vos pipelines GitLab CI et exploiter Ceph/Kubernetes. Liste d'attente ouverte.">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>OpsForgeKit</h1>
+    <p>Des kits clef en main pour les équipes ops : sécurité des pipelines GitLab, runbooks Ceph/Kubernetes.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>GitLab Security Kit <small>(en préparation)</small></h2>
+      <p>Un composant CI/CD à inclure en quelques lignes pour ajouter sur GitLab Free/Premium :</p>
+      <ul>
+        <li>détection de secrets (Gitleaks) ;</li>
+        <li>analyse des dépendances (OSV-Scanner) ;</li>
+        <li>vulnérabilités et mauvaises configurations IaC (Trivy) ;</li>
+        <li>versions épinglées, rapports en artefacts, guide de durcissement de l'instance.</li>
+      </ul>
+      <p>Le kit est en phase de test. Les fonctionnalités et le prix seront confirmés au lancement.</p>
+    </section>
+
+    <section>
+      <h2>Ceph en production <small>(en préparation)</small></h2>
+      <p>Runbooks et guide de diagnostic en français : upgrades, pannes courantes, dimensionnement, supervision.</p>
+    </section>
+
+    <section id="waitlist">
+      <h2>Liste d'attente</h2>
+      <p>Laissez votre e-mail pour être prévenu du lancement et dire ce qui vous manque le plus.</p>
+      <!-- Remplacer l'action par l'URL du formulaire du service de newsletter choisi -->
+      <form action="REPLACE_WAITLIST_URL" method="post">
+        <label>E-mail <input type="email" name="email" required autocomplete="email"></label>
+        <label>Votre sujet prioritaire
+          <select name="topic">
+            <option value="gitlab-security">Sécurité GitLab CI</option>
+            <option value="ceph">Ceph en production</option>
+            <option value="other">Autre</option>
+          </select>
+        </label>
+        <button type="submit">Me prévenir</button>
+      </form>
+      <p><small>Votre e-mail sert uniquement à vous informer du lancement. Voir la <a href="/privacy.html">politique de confidentialité</a>.</small></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>OpsForgeKit · <a href="/privacy.html">Confidentialité</a></p>
+  </footer>
+</body>
+</html>
